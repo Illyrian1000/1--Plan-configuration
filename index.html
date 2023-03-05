@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plans</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <!-- SIDEBAR -->
+
+      <div class="sidebar">
+        <img src="/assets/images/bg-sidebar-desktop.svg" alt="" />
+        <ol>
+          <li>
+            <p class="sideNumber step1">1</p>
+            <div>
+              <p class="steps">STEP 1</p>
+              <p class="sideBarLiText">YOUR INFO</p>
+            </div>
+          </li>
+          <li>
+            <p class="sideNumber step2">2</p>
+            <div>
+              <p class="steps">STEP 2</p>
+              <p class="sideBarLiText">SELECT PLAN</p>
+            </div>
+          </li>
+          <li>
+            <p class="sideNumber step3">3</p>
+            <div>
+              <p class="steps">STEP 3</p>
+              <p class="sideBarLiText">ADD-ONS</p>
+            </div>
+          </li>
+          <li>
+            <p class="sideNumber step4">4</p>
+            <div>
+              <p class="steps">STEP 4</p>
+              <p class="sideBarLiText">SUMMARY</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- DETAIL CONTAINER -->
+
+      <div class="detailsContainer">
+        <!-- personal info -->
+
+        <div class="personalInfo">
+          <div>
+            <p class="topText">Personal info</p>
+            <p class="underText">
+              Please provide your name, email address, and phone number.
+            </p>
+          </div>
+          <div>
+            <p class="inputTopText">Name</p>
+            <input
+              class="firstInput inputName"
+              type="text"
+              placeholder="e.g. Stephen King"
+              id=""
+            />
+          </div>
+          <div>
+            <p class="inputTopText inputEmail">Email Address</p>
+            <input
+              class="firstInput"
+              type="text"
+              placeholder="e.g. stephenking@lorem.com"
+              id=""
+            />
+          </div>
+          <div>
+            <p class="inputTopText inputPhone">Phone Number</p>
+            <input
+              class="firstInput"
+              type="number"
+              placeholder="e.g. +355 69 12 34 567"
+              id=""
+            />
+          </div>
+
+          <div>
+            <button class="firstBtn">Next Step</button>
+          </div>
+        </div>
+
+        <!-- select plan -->
+
+        <div class="planSelect hide">
+          <div>
+            <p>Select your plan</p>
+            <p>You have the option of monthly or yearly billing.</p>
+          </div>
+
+          <div class="planCards">
+            <div>
+              <img src="/assets/images/icon-arcade.svg" alt="" />
+              <p>Arcade</p>
+              <p>$9/mo</p>
+            </div>
+            <div>
+              <img src="/assets/images/icon-advanced.svg" alt="" />
+              <p>Advanced</p>
+              <p>$12/mo</p>
+            </div>
+            <div>
+              <img src="/assets/images/icon-pro.svg" alt="" />
+              <p>Pro</p>
+              <p>$15/mo</p>
+            </div>
+          </div>
+          <div>
+            <p>Monthly</p>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+            <p>Yearly</p>
+          </div>
+        </div>
+
+        <!-- pick addons -->
+
+        <div class="planSelect hide">
+          <div>
+            <p>Pick add-ons</p>
+            <p>Add-ons help enhance your gaming experience.</p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="" id="" />
+            <div>
+              <p>Online Servic</p>
+              <p>Access multiplayer games</p>
+            </div>
+            <p>+$1/mo</p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="" id="" />
+            <div>
+              <p>Larger storage</p>
+              <p>Extra 1TB of cloud save</p>
+            </div>
+            <p>+$2/mo</p>
+          </div>
+
+          <div>
+            <input type="checkbox" name="" id="" />
+            <div>
+              <p>Customizable profile</p>
+              <p>Custom theme on your profile</p>
+            </div>
+            <p>+$2/mo</p>
+          </div>
+        </div>
+
+        <!-- finishing up -->
+
+        <div class="finishingUp hide">
+          <div>
+            <p>Pick add-ons</p>
+            <p>Add-ons help enhance your gaming experience.</p>
+          </div>
+
+          <div>
+            <div>
+              <p>Arcade (Monthly)</p>
+              <p>Change</p>
+            </div>
+            <div><p>$9/mo</p></div>
+          </div>
+          <ol></ol>
+        </div>
+
+        <!-- purchase confirmation -->
+
+        <div class="purchaseConfirmation hide">
+          <img src="/assets/images/icon-thank-you.svg" alt="" />
+          <h2>Thank you!</h2>
+          <p>
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

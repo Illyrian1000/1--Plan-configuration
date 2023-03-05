@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: #eff5ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  width: 60vw;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.sidebar {
+  margin: 20px 0 20px 20px;
+  position: relative;
+}
+
+img {
+  height: 100%;
+}
+
+ol {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+li {
+  display: flex;
+  gap: 15px;
+}
+.sideNumber {
+  border: 1px solid white;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: 400;
+}
+
+/* REMOVE THE ARROWS IN THE INPUT FIELD */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* hide not active content */
+
+.hide {
+  display: none;
+}
+
+.numberActive {
+  background-color: #bee2fd;
+  border: 1px solid #bee2fd;
+  color: black;
+}
