@@ -52,168 +52,200 @@
       </div>
 
       <!-- DETAIL CONTAINER -->
+      <div class="aligDetails">
+        <div class="detailsContainer">
+          <!-- personal info -->
 
-      <div class="detailsContainer">
-        <!-- personal info -->
+          <div class="personalInfo hide">
+            <div>
+              <p class="topText">Personal info</p>
+              <p class="underText">
+                Please provide your name, email address, and phone number.
+              </p>
+            </div>
+            <div>
+              <p class="inputTopText">Name</p>
+              <input
+                class="firstInput inputName"
+                type="text"
+                placeholder="e.g. Stephen King"
+                id=""
+              />
+            </div>
+            <div>
+              <p class="inputTopText inputEmail">Email Address</p>
+              <input
+                class="firstInput"
+                type="text"
+                placeholder="e.g. stephenking@lorem.com"
+                id=""
+              />
+            </div>
+            <div>
+              <p class="inputTopText inputPhone">Phone Number</p>
+              <input
+                class="firstInput"
+                type="number"
+                placeholder="e.g. +355 69 12 34 567"
+                id=""
+              />
+            </div>
 
-        <div class="personalInfo hide">
-          <div>
-            <p class="topText">Personal info</p>
-            <p class="underText">
-              Please provide your name, email address, and phone number.
+            <div>
+              <button class="firstBtn nextBtn">Next Step</button>
+            </div>
+          </div>
+
+          <!-- select plan -->
+
+          <div class="planSelect hide">
+            <div>
+              <p class="topText">Select your plan</p>
+              <p class="underText">
+                You have the option of monthly or yearly billing.
+              </p>
+            </div>
+
+            <div class="planCards">
+              <div>
+                <img src="/assets/images/icon-arcade.svg" alt="" />
+                <p class="planName">Arcade</p>
+                <p class="planPrice">$9/mo</p>
+              </div>
+              <div>
+                <img src="/assets/images/icon-advanced.svg" alt="" />
+                <p class="planName">Advanced</p>
+                <p class="planPrice">$12/mo</p>
+              </div>
+              <div>
+                <img src="/assets/images/icon-pro.svg" alt="" />
+                <p class="planName">Pro</p>
+                <p class="planPrice">$15/mo</p>
+              </div>
+            </div>
+            <div class="switchDiv">
+              <p>Monthly</p>
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+              <p>Yearly</p>
+            </div>
+
+            <div>
+              <button class="goBackPage2 backBtn">Go Back</button>
+              <button class="secondBtn nextBtn">Next Step</button>
+            </div>
+          </div>
+
+          <!-- pick addons -->
+
+          <div class="addOns hide">
+            <div>
+              <p class="topText">Pick add-ons</p>
+              <p class="underText">
+                Add-ons help enhance your gaming experience.
+              </p>
+            </div>
+
+            <div class="addOnList">
+              <div class="addOnLeft">
+                <input type="checkbox" name="" id="" />
+                <div>
+                  <p class="planName">Online Servic</p>
+                  <p class="planText">Access multiplayer games</p>
+                </div>
+              </div>
+              <p>+$1/mo</p>
+            </div>
+
+            <div class="addOnList">
+              <div class="addOnLeft">
+                <input type="checkbox" name="" id="" />
+                <div>
+                  <p class="planName">Larger storage</p>
+                  <p class="planText">Extra 1TB of cloud save</p>
+                </div>
+              </div>
+              <p>+$2/mo</p>
+            </div>
+
+            <div class="addOnList">
+              <div class="addOnLeft">
+                <input type="checkbox" name="" id="" />
+                <div>
+                  <p class="planName">Customizable profile</p>
+                  <p class="planText">Custom theme on your profile</p>
+                </div>
+              </div>
+              <p>+$2/mo</p>
+            </div>
+
+            <div>
+              <button class="goBackPage3 backBtn">go back</button>
+              <button class="thirdBtn nextBtn">Next Step</button>
+            </div>
+          </div>
+
+          <!-- finishing up -->
+
+          <div class="finishingUp">
+            <div>
+              <p class="topText">Finishing up</p>
+              <p class="underText">
+                Double-check everything looks OK before confirming.
+              </p>
+            </div>
+
+            <div class="recap">
+              <div class="planNameRecap">
+                <div>
+                  <p class="planNameRecapName">Arcade (Monthly)</p>
+                  <p class="changeBtnRecap">Change</p>
+                </div>
+                <p class="priceRecap">$9/mo</p>
+              </div>
+
+              <ol>
+                <li>
+                  <p>Online service</p>
+                  <p class="addOnPrice">+$1/mo</p>
+                </li>
+
+                <li>
+                  <p>Larger storage</p>
+                  <p class="addOnPrice">+$2/mo</p>
+                </li>
+
+                <li>
+                  <p>Customizable profile</p>
+                  <p class="addOnPrice">+$2/mo</p>
+                </li>
+              </ol>
+            </div>
+
+            <div class="lastPart">
+              <p class="total">Total (per month)</p>
+              <p class="lastPrice">+12/mo</p>
+            </div>
+
+            <div>
+              <button class="goBackPage4 backBtn">go back</button>
+              <button class="forthBtn nextBtn">Confirm</button>
+            </div>
+          </div>
+
+          <!-- purchase confirmation -->
+
+          <div class="purchaseConfirmation hide">
+            <img src="/assets/images/icon-thank-you.svg" alt="" />
+            <h2>Thank you!</h2>
+            <p>
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free to
+              email us at support@loremgaming.com.
             </p>
           </div>
-          <div>
-            <p class="inputTopText">Name</p>
-            <input
-              class="firstInput inputName"
-              type="text"
-              placeholder="e.g. Stephen King"
-              id=""
-            />
-          </div>
-          <div>
-            <p class="inputTopText inputEmail">Email Address</p>
-            <input
-              class="firstInput"
-              type="text"
-              placeholder="e.g. stephenking@lorem.com"
-              id=""
-            />
-          </div>
-          <div>
-            <p class="inputTopText inputPhone">Phone Number</p>
-            <input
-              class="firstInput"
-              type="number"
-              placeholder="e.g. +355 69 12 34 567"
-              id=""
-            />
-          </div>
-
-          <div>
-            <button class="firstBtn nextBtn">Next Step</button>
-          </div>
-        </div>
-
-        <!-- select plan -->
-
-        <div class="planSelect hide">
-          <div>
-            <p class="topText">Select your plan</p>
-            <p class="underText">
-              You have the option of monthly or yearly billing.
-            </p>
-          </div>
-
-          <div class="planCards">
-            <div>
-              <img src="/assets/images/icon-arcade.svg" alt="" />
-              <p class="planName">Arcade</p>
-              <p class="planPrice">$9/mo</p>
-            </div>
-            <div>
-              <img src="/assets/images/icon-advanced.svg" alt="" />
-              <p class="planName">Advanced</p>
-              <p class="planPrice">$12/mo</p>
-            </div>
-            <div>
-              <img src="/assets/images/icon-pro.svg" alt="" />
-              <p class="planName">Pro</p>
-              <p class="planPrice">$15/mo</p>
-            </div>
-          </div>
-          <div class="switchDiv">
-            <p>Monthly</p>
-            <label class="switch">
-              <input type="checkbox" checked />
-              <span class="slider round"></span>
-            </label>
-            <p>Yearly</p>
-          </div>
-
-          <div>
-            <button class="goBackPage2 backBtn">Go Back</button>
-            <button class="secondBtn nextBtn">Next Step</button>
-          </div>
-        </div>
-
-        <!-- pick addons -->
-
-        <div class="addOns">
-          <div>
-            <p class="topText">Pick add-ons</p>
-            <p class="underText">
-              Add-ons help enhance your gaming experience.
-            </p>
-          </div>
-
-          <div class="addOnList">
-            <input type="checkbox" name="" id="" />
-            <div>
-              <p>Online Servic</p>
-              <p>Access multiplayer games</p>
-            </div>
-            <p>+$1/mo</p>
-          </div>
-
-          <div class="addOnList">
-            <input type="checkbox" name="" id="" />
-            <div>
-              <p>Larger storage</p>
-              <p>Extra 1TB of cloud save</p>
-            </div>
-            <p>+$2/mo</p>
-          </div>
-
-          <div class="addOnList">
-            <input type="checkbox" name="" id="" />
-            <div>
-              <p>Customizable profile</p>
-              <p>Custom theme on your profile</p>
-            </div>
-            <p>+$2/mo</p>
-          </div>
-
-          <div>
-            <button class="goBackPage3 backBtn">go back</button>
-            <button class="thirdBtn nextBtn">Next Step</button>
-          </div>
-        </div>
-
-        <!-- finishing up -->
-
-        <div class="finishingUp hide">
-          <div>
-            <p>Pick add-ons</p>
-            <p>Add-ons help enhance your gaming experience.</p>
-          </div>
-
-          <div>
-            <div>
-              <p>Arcade (Monthly)</p>
-              <p>Change</p>
-            </div>
-            <div><p>$9/mo</p></div>
-          </div>
-          <ol></ol>
-
-          <div>
-            <button class="goBackPage4">go back</button>
-            <button class="forthBtn">Next Step</button>
-          </div>
-        </div>
-
-        <!-- purchase confirmation -->
-
-        <div class="purchaseConfirmation hide">
-          <img src="/assets/images/icon-thank-you.svg" alt="" />
-          <h2>Thank you!</h2>
-          <p>
-            Thanks for confirming your subscription! We hope you have fun using
-            our platform. If you ever need support, please feel free to email us
-            at support@loremgaming.com.
-          </p>
         </div>
       </div>
     </div>

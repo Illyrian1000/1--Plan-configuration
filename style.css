@@ -9,11 +9,11 @@ body {
   background-color: #eff5ff;
 }
 .mainContainer {
-  height: fit-content;
-  width: fit-content;
+  height: 70vh;
+  width: 60vw;
   display: flex;
   margin: auto;
-  margin-top: 8vh;
+  margin-top: 15vh;
   background-color: white;
   border-radius: 10px;
 }
@@ -21,14 +21,13 @@ body {
 .sidebar {
   position: relative;
   margin: 20px 0 20px 20px;
-  height: fit-content;
 }
 
-img {
-  height: 80vh;
+.sidebar img {
+  height: 100%;
 }
 
-ol {
+.sidebar ol {
   position: absolute;
   top: 50px;
   left: 30px;
@@ -71,13 +70,23 @@ li {
   color: #ffffff;
 }
 
+.aligDetails {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
 .detailsContainer {
   position: relative;
-  margin: 50px 100px;
+  display: flex;
+  width: 60%;
+  margin: 50px 0;
 }
 
 .personalInfo {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -123,6 +132,17 @@ li {
   border-radius: 8px;
 }
 
+.addOnLeft {
+  display: flex;
+  gap: 30px;
+}
+
+.addOnLeft > * {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .nextBtn {
   position: absolute;
   bottom: 0;
@@ -141,6 +161,7 @@ li {
 /* SECOND PAGE */
 
 .planSelect {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -197,6 +218,10 @@ li {
 
   border: 1px solid #483eff;
   border-radius: 8px;
+}
+
+.addOns {
+  width: 100%;
 }
 
 /* BUTTONS */
@@ -312,6 +337,162 @@ input::-webkit-inner-spin-button {
   border-radius: 8px;
   align-items: center;
   padding: 10px 20px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.addOnList > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  text-align: right;
+
+  /* Purple */
+
+  color: #483eff;
+}
+
+.addOnList:hover {
+  background: #f8f9ff;
+  border: 1px solid #483eff;
+  border-radius: 8px;
+}
+
+.planName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #022959;
+}
+.planText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9699aa;
+}
+
+.finishingUp {
+  width: 100%;
+}
+
+.recap {
+  display: flex;
+  flex-direction: column;
+}
+
+.recap {
+  background: #f8f9ff;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.planNameRecap {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #9699aa20;
+  padding-bottom: 20px;
+}
+.planNameRecapName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #022959;
+}
+
+.changeBtnRecap {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #9699aa;
+  margin-top: 7px;
+}
+
+.priceRecap {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #022959;
+}
+
+.recap li {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9699aa;
+}
+
+.addOnPrice {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: #022959;
+}
+
+.lastPart {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.total {
+  font-size: 14px;
+  line-height: 20px;
+  color: #9699aa;
+}
+
+.lastPrice {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: right;
+  color: #483eff;
+}
+
+.purchaseConfirmation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchaseConfirmation p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  /* or 156% */
+
+  text-align: center;
+
+  /* Grey */
+
+  color: #9699aa;
+}
+
+.purchaseConfirmation img {
+  width: 80px;
+}
+
+.purchaseConfirmation h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  color: #022959;
 }
 
 /* Firefox */
