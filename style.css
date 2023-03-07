@@ -51,6 +51,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .steps {
@@ -509,7 +510,8 @@ input[type="number"] {
 .numberActive {
   background-color: #bee2fd;
   border: 1px solid #bee2fd;
-  color: black;
+  font-weight: 700;
+  color: #022959;
 }
 
 .cardActive {

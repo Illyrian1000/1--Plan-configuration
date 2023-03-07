@@ -1,31 +1,133 @@
-// STEPS
+//test
+//space
+//space
 
-const stepOne = document.querySelector(".step1");
-const stepTwo = document.querySelector(".step2");
-const stepThree = document.querySelector(".step3");
-const stepFour = document.querySelector(".step4");
+//
+// CONSTANTS
+//
 
-//INPUT FIELDS
+const sideNumbers = document.querySelectorAll(".sideNumber");
+const contentPages = document.querySelectorAll(".contentPage");
+const pageOne = document.querySelector(".personalInfo");
+const pageTwo = document.querySelector(".planSelect");
+const pageThree = document.querySelector(".addOns");
+const pageFour = document.querySelector(".finishingUp");
 
-const userName = document.querySelector(".inputName");
-const userEmail = document.querySelector(".inputEmail");
-const userPhone = document.querySelector(".inputPhone");
+//
+// BUTTONS
+//
 
-//BUTTONS
+const firstBtn = document.querySelector(".firstBtn");
+const secondBtn = document.querySelector(".secondBtn");
+const thirdBtn = document.querySelector(".thirdBtn");
+const forthBtn = document.querySelector(".forthBtn");
 
-const nextBtn = document.querySelector(".next");
-const backBtn = document.querySelector(".back");
+const goBackTwo = document.querySelector(".goBackPage2");
+const goBackThree = document.querySelector(".goBackPage3");
+const goBackFour = document.querySelector(".goBackPage4");
 
-stepOne.addEventListener("click", () => {
-  console.log(`One`);
+//
+// VARIABLES
+//
+
+let currentPage = 0;
+
+//
+//SCRIPT
+//
+
+sideNumbers.forEach((el) => {
+  el.addEventListener("click", function () {
+    removeBtnActive();
+    sideNumbers.forEach((i) => {
+      this.classList.add("numberActive");
+      if (this === sideNumbers[0]) {
+        currentPage = 0;
+        changePage();
+      } else if (this === sideNumbers[1]) {
+        currentPage = 1;
+        changePage();
+      } else if (this === sideNumbers[2]) {
+        currentPage = 2;
+        changePage();
+      } else if (this === sideNumbers[3]) {
+        currentPage = 3;
+        changePage();
+      }
+    });
+  });
 });
 
-stepTwo.addEventListener("click", () => {
-  console.log(`Two`);
+// removes the active status from all the numbers
+
+const removeBtnActive = function () {
+  sideNumbers.forEach((el) => {
+    el.classList.remove("numberActive");
+  });
+};
+
+// adds the HIDE class to all pages and removes it only from the clicked one
+
+const changePage = function () {
+  contentPages.forEach((el) => {
+    el.classList.add("hide");
+    if (currentPage === 0) {
+      pageOne.classList.remove("hide");
+    } else if (currentPage === 1) {
+      pageTwo.classList.remove("hide");
+    } else if (currentPage === 2) {
+      pageThree.classList.remove("hide");
+    } else if (currentPage === 3) {
+      pageFour.classList.remove("hide");
+    }
+  });
+};
+
+firstBtn.addEventListener("click", function () {
+  currentPage++;
+  removeBtnActive();
+  changePage();
+  sideNumbers[currentPage].classList.add("numberActive");
 });
-stepThree.addEventListener("click", () => {
-  console.log(`Three`);
+
+secondBtn.addEventListener("click", function () {
+  currentPage++;
+  removeBtnActive();
+  changePage();
+  sideNumbers[currentPage].classList.add("numberActive");
 });
-stepFour.addEventListener("click", () => {
-  console.log(`Four`);
+
+thirdBtn.addEventListener("click", function () {
+  currentPage++;
+  removeBtnActive();
+  changePage();
+  sideNumbers[currentPage].classList.add("numberActive");
+});
+
+// forthBtn.addEventListener("click", function () {
+//   currentPage++;
+//   removeBtnActive();
+//   changePage();
+//   sideNumbers[currentPage].classList.add("numberActive");
+// });
+
+goBackTwo.addEventListener("click", function () {
+  currentPage--;
+  removeBtnActive();
+  changePage();
+  sideNumbers[currentPage].classList.add("numberActive");
+});
+
+goBackThree.addEventListener("click", function () {
+  currentPage--;
+  removeBtnActive();
+  changePage();
+  sideNumbers[currentPage].classList.add("numberActive");
+});
+
+goBackFour.addEventListener("click", function () {
+  currentPage--;
+  removeBtnActive();
+  changePage();
+  sideNumbers[currentPage].classList.add("numberActive");
 });
